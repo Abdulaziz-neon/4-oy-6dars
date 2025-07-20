@@ -1,0 +1,194 @@
+//O'zgaruvchi turlari ? 5
+/*
+1. let const ni farqi ? 5
+2. var let farqi ? 0
+3. Data types asosiy nechi xil turga bolinadi ? 4
+4. Primitiv va No-primitiv (refrence) farqi 3?
+5. Accses before intilization 0 ?
+6. Type conversion  haqida malumot bering 0?
+7. Type conversion necha xil usuli bor 0?
+8. Avtomatik type conversion haqida malumot bering 0?
+9. Math objecti haqida malumot bering 3?
+10. Truhy and falsy qiymatlarini sanab bering 0 ?
+11. If else haqida malumo bering 5?
+12. Switch case haqida malumot bering 4?
+13. Nechi xil asosiy functionlar bor 0?
+14. Functionlarni bir biridan farqi 0?
+15. Functionda return ishlashi 0 ?
+16. IIFE haqida malumot bering 0?
+17. Method nima 0?
+18. Stringni split malumot bering 0?
+19. Loop nima 1?
+20. Loop turlari 0?
+21. do while while loopini farqi 2 ?
+22. for in for of farqi 0?
+23. Assigment operatorlarni sanab bering 4?
+24. == === farqi 5 ?
+25. ! operatori haqida  0?
+26. Array method concat 5 ?
+27. Array method reverce 5 ?
+28. Array method splice 0 ?
+29. Array method foreach 0?
+30. Array foreach methodni boshqa methodalrdan farqi 0?
+31. Arrayni map methodi 0?
+32. Arrayni some methodi haqida malumot bering 0?
+33. Arrayni every methodi haqida malumot bering  0?
+34. Arrayni find methodi haqida malumot bering  4?
+35. Arrayni reduce methodi haqida malumot bering 0 ?
+
+
+
+
+
+Javoblar:
+
+
+1: letda qiymatni ozgartirish mumkin, lekin constda qiymatni ozgartirib bolmaydi,
+ammo const bilan array yoki object elon qilinsa ularni ichki qiymatini ozgartirish mumkin.
+
+2: var: qayta elon qilinadi va hoistingda error bermaydi undefined beradi, 
+let esa unday emas, va let global obyekt bilan ishlamaydi(window) bilan, var esa ishlaydi.  
+
+3: 2 xil usulga bolinadi, Primitive va Non-Primitive.
+
+4: Primitive:  oddiy qiymatlar bo'lib, o'zgartirib bo'lmaydi har bir qiymat o'z qiymati bilan saqlanadi.
+Non-Primitive: ko'p qiymatlarni bir joyda saqlaydi va o'zgartirish mumkin.
+
+5: JavaScript kodni ishlatishdan oldin tahlil qiladi va let, const, var, function, class kabi deklaratsiyalarni oldindan koradi yani hoisting,
+kod bajarilayotganda o'zgaruvchilari Temporal Dead Zone (TDZ) holatida bo'ladi. Hulosa shundaki Js ozgaruvchilarni oldindan korib qoyadi.
+
+6:  2 xil Type Conversion mavjud:  Automatic: JavaScript o‘zi avtomatik qiladi.
+Manual: Dasturchi o‘zi qo‘lda qiladi.
+
+7: 2 xil Type Conversion mavjud.
+
+8: Automatic: JavaScript o‘zi avtomatik qiladi, JavaScript ba’zi operatsiyalarda o‘zi avtomatik ma’lumot turini o‘zgartiradi.
+
+9: Jsdagi Math obyekti bu matematik amallarni bajarish uchun ichki obyekt bo‘lib, bizga sonlar bilan ishlash uchun juda ko‘p funksiyalar taqdim etadi.
+
+10: False:
+false	    To‘g‘ridan to‘g‘ri false
+0	        Nol
+-0	        Manfiy nol
+0n	        BigInt nol
+""	        Bo‘sh string
+null	    Hech qanday qiymat emas
+undefined	Belgilanmagan qiymat
+NaN         Raqam emas 
+
+True: true esa qolgan barcha qiymatlarni oz ichiga oladi.
+
+11: JHsda if else  bu shartli operator bo‘lib, biror shart bajarilsa bir kodni, bomasa boshqa kodni bajaradi.
+
+12:  Jsda switch case bu Jsda ko‘p holatli shartlarni tekshirish uchun ishlatiladigan funksiya.
+
+13 va 14:
+
+Function Declaration	     Klassik, hoisting ishlaydi
+
+Function Expression	         Ifoda, hoisting ishlamaydi
+
+Arrow Function	             Qisqa yozuv, this yo‘q
+
+Anonymous Function	         Nomsiz, ko‘pincha callback’da
+
+Callback Function	         Parametr sifatida uzatiladigan funksiya
+
+IIFE	                     Darhol bajariladigan funksiya
+
+Constructor Function         new bilan chaqiriladi, obyekt yaratadi
+
+
+15:  Funksiyadan qiymatni chiqaradi (ya'ni, tashqariga yuboradi),
+return yozilgan joydan boshlab funksiya to‘xtaydi, undan keyingi kod bajarilmaydi.
+
+16:
+
+IIFE	                     Darhol bajariladigan funksiya.
+
+
+17:  Method bu funksiya faqat u abject ichida boladi.
+
+18: split() bu JavaScript string methodi bo‘lib, matnni (ya’ni stringni) belgilangan belgiga qarab arrayga bo‘lib beradi.
+
+19: Jsda loop (ya'ni, takrorlash) orqali array, son, matn kabi narsalarni ketma-ket aylanib ko‘rish mumkin..
+
+20 , 21:
+
+for         	Aniq necha marta takrorlash uchun
+
+while	        Shart true bo‘lsa, takrorlash
+
+do ...while	    Kamida 1 marta bajariladi, so‘ng shart tekshiriladi
+
+for of	    Array yoki string elementlarini aylanib chiqish uchun
+
+
+22:
+
+for in   obyekt uchun ishlatiladi (keylar bilan ishlaydi).
+
+for of   massiv va matn uchun ishlatiladi (qiymatlar bilan ishlaydi).
+
+for of ni obyektda ishlatib bo‘lmaydi (xato beradi).
+
+23:
+
+Operator	         Ma’nosi    	           Misol                	Izoh
+
+   =	           Qiymat berish	           x = 5	           Oddiy tayinlash
+
+   +=	         Qo‘shib tayinlash	           x += 3	         x = x + 3 bilan teng
+
+   -=	          Ayirib tayinlash	           x -= 2	              x = x - 2
+
+   *=	       Ko‘paytirib tayinlash	       x *= 4	              x = x * 4
+
+   /=	         Bo‘lib tayinlash	           x /= 2	              x = x / 2
+
+   %=	      Qoldiqqa ko‘ra tayinlash	       x %= 3	              x = x % 3
+
+   **=	    Darajaga ko‘tarib tayinlash	       x **= 2	         x = x ** 2 (ya’ni, x²)
+
+   <<=	     Chapga siljitib tayinlash	       x <<= 2	        Bitwise (kam ishlatiladi)
+
+   >>=	     O‘ngga siljitib tayinlash	       x >>= 2	        Bitwise (kam ishlatiladi)
+
+   &=	    Bitwise AND bilan tayinlash	       x &= y	            Kam ishlatiladi
+
+   ^=	    Bitwise XOR bilan tayinlash  	   x ^= y	            Kam ishlatiladi
+
+   `	                =`	         Bitwise OR bilan tayinlash	          `x
+
+   &&=	    Mantiqiy AND bilan tayinlash	   x &&= y	          x true bo‘lsa → x = y
+
+   `		                                      =`	       Mantiqiy OR bilan tayinlash
+
+   ??=	     Nullish tayinlash operatori	   x ??= y	     x null yoki undefined bo‘lsa → x = y
+
+
+24: == qiymatni tekshiradi. === qiymatni va tipini tekshiradi.
+
+25: ! belgisi biror qiymatni teskarisiga o‘giradi.
+
+26: Jsdagi concat() bu array metod bo‘lib, ikkita yoki undan ortiq massivlarni birlashtirib, yangi array qaytaradi. Asl arraylar o‘zgarmaydi.
+
+27: Jsda reverse() bu array metod bo‘lib, massiv elementlarini teskari tartibda joylashtiradi.
+
+28: Jsdagi splice() — bu array method bo‘lib, massivdan elementlarni: o‘chiradi, qo‘shadi, yoki o‘rnini almashtiradi.
+
+29: Jsda forEach() takrorlovchi method, lekin yangi array qaytarmaydi, faqat amal bajaradi.
+
+30: ForEach() angi array qaytaramidi, break ishlamaydi, maqsadi faqat harakat bajarish, return ishlamidi.
+
+31: map() massivdagi har bir elementga amal bajaradi va natijani yangi arrayda saqlab qaytaradi.
+
+32: some() bu massivdagi kamida bitta element berilgan shartni qanoatlantiradimi yoki yo‘qmi shuni tekshiradi.
+
+33: every() massivdagi har bir element shartga mos kelsagina true qaytaradi.
+Agar bitta element ham mos kelmasa, false qaytaradi.
+
+34: find() massiv ichidan berilgan shartga birinchi mos keladigan elementni qaytaradi.
+Agar hech qaysi element shartga mos kelmasa, undefined qaytaradi.
+
+35: reduce() arraydagi elementlarni birlashtirib, bitta umumiy qiymat hosil qiladi.
